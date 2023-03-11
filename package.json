@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "jest": "^29.5.0"
+  },
+  "name": "ensomhed",
+  "description": "A command-line Node.js application to generate a webpage of team members",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "jest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thorne7/Ensomhed.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thorne7/Ensomhed/issues"
+  },
+  "homepage": "https://github.com/thorne7/Ensomhed#readme"
+}
