@@ -5,19 +5,11 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
 
-import { Employee } from "./lib/Employee";
-import { Engineer } from "./lib/Engineer";
-import { Intern } from "./lib/Intern";
-import { Manager } from "./lib/Manager";
-
-const employee = new Employee(Manager, Engineer, Intern);
+const employee = new Employee();
 
 Employee.welcome();
 
 Employee.promptEmployee();
-
-
-
 
 const manager = new Manager();
 inquirer.prompt(manager.questions)
@@ -29,4 +21,20 @@ inquirer.prompt(manager.questions)
     console.error(error);
   });
 
+const engineer = new Engineer();
+inquirer.prompt(engineer.questions)
+  .then((answers) => {
+    console.log("engineer answers;", answers);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
 
+  const intern =new Intern();
+  inquirer.prompt(intern.questions)
+  .then((answers) => {
+    console.log("intern answers", answers);
+  })
+  .catch((error) => {
+    console.error(error);
+  })
