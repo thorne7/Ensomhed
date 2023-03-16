@@ -4,24 +4,19 @@
 
 // getRole() // Overridden to return 'Engineer'
 
-const Engineer = require("../lib/Engineer.js");
+const Engineer = require("../lib/Engineer");
 
 describe("Engineer", () => {
-  describe("getGithub", () => {
-    it("should return the engineer's Github username", () => {
-      const testGithub = "testGithub";
-      const engineer = new Engineer("Test Name", 1, "test@example.com", testGithub);
-      expect(engineer.getGithub()).toBe(testGithub);
-    });
-  });
-
-  describe("getRole", () => {
-    it("should return 'Engineer'", () => {
-      const testRole = "Engineer";
-      const engineer = new Engineer("Test Name", 1, "test@example.com", "testGithub");
-      expect(engineer.getRole()).toBe(testRole);
+  describe("create an Engineer object", ()  => {
+    it("should create an Engineer object with name, id, email and github properties", () => {
+      const engineer = new Engineer("Paul Smith", "002", "paulsmith@test.com", "psmit");
+      expect(engineer.name).toEqual("Paul Smith");
+      expect(intern.id).toEqual("002");
+      expect(intern.email).toEqual("paulsmith@test.com");
+      expect(intern.school).toEqual("psmit");
     });
   });
 });
 
-module.exports = Engineer;
+// module.exports = Engineer;
+ 

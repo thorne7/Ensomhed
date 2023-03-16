@@ -6,9 +6,10 @@
 
 const Intern = require("../lib/Intern.js");
 
+
 describe("Intern", () => {
     describe("Create an Intern object", () => {
-      it("should create an Intern object with name, id, email, and school properties", () => {
+      it("should create an Intern object with name, id, email and school properties", () => {
         const intern = new Intern("Bob Smith", "003", "bobsmith@test.com", "University of Arizona");
         expect(intern.name).toEqual("Bob Smith");
         expect(intern.id).toEqual("003");
@@ -18,4 +19,4 @@ describe("Intern", () => {
     });
   });
 
-module.exports = Intern;
+// module.exports = Intern;
