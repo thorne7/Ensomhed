@@ -13,16 +13,6 @@ employee.welcome();
 
 await employee.promptEmployee();
 
-switch (answers.role) {
-  case "Manager":
-      return Manager.promptManager(answers);
-  case "Engineer":
-      return Engineer.promptEngineer(answers);
-  case "Intern":
-      return Intern.promptIntern(answers);
-  default:
-      throw new Error(`Invalid role: ${answers.role}`)
-};
 
 
 };
